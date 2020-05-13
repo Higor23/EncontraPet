@@ -158,7 +158,7 @@ def faleConosco(request):
 
         if form.is_valid():
 
-            send_mail(nome, mensagem, email, ['cactusimpressoes@gmail.com'], fail_silently=False)
+            send_mail(nome, mensagem, email, ['desenvolvedor.higor@gmail.com'], fail_silently=False)
     
             # return redirect('/msgConfirmacao/')
             return render(request, 'anuncios/msgConfirmacao.html', {'form':form})

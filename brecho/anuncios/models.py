@@ -41,9 +41,13 @@ class Anuncio(models.Model):
         ('Adotado', 'Adotado'),
         ('Outro', 'Outro'),
     )
+
+    # TERMOS_USO = {
+    #     ('Sim', 'Sim')
+    # }
     status = models.CharField(max_length=10, choices=STATUS)
     situacao = models.CharField(max_length=10, choices=SITUACAO, blank=True)
-    observacao = models.CharField(max_length=50, blank=True, default="")
+    observacao = models.TextField()
     
     categoria = models.CharField(max_length=12, choices=CATEGORIA)
     
@@ -69,6 +73,7 @@ class Anuncio(models.Model):
     foto_02 = models.FileField(blank=True)
     foto_03 = models.FileField(blank=True)
     foto_04 = models.FileField(blank=True)
+    # termos_uso = 
 
     created_at = models.DateField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
