@@ -1,0 +1,303 @@
+body{
+    background-color:rgb(247, 247, 247) ;
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.
+#logo{
+    color: white;
+    /* margin-left: 10px; */
+    font-size: 25px;
+}
+
+.btn-light{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background-color: forestgreen;
+    color: white;
+    margin-left: 100%;
+}
+
+
+.search-div{
+    padding: 0px;
+    margin-left: 4%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Filtros */
+
+.filter-div{
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+#filter {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+}
+
+/* Botão anunciar */
+.btn-success{
+    position:relative;
+}
+
+/* Links menu */
+.navbar-nav{
+    margin-left: 12px;
+    
+}
+a:link {
+    color: white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+a { color: white; 
+    font-weight: normal;
+}
+
+a.nav-item {
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 5px;
+    
+}
+
+.nav-item{
+    margin-left: 3px;
+    padding: 15px;
+    margin-left: 5px;
+    
+} 
+
+a:link {
+    color: #000000;  
+}
+
+a:hover {
+    color: black;
+}
+
+#nav-usuario{
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#btn-anunciar{
+    display: inline;;
+}
+
+/* Toggle */
+
+.navbar-toggler{
+    margin-left: 44%;
+    color: white;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   }
+
+/* Container-body */
+.container-body {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+
+/* Formulário de addAnuncio */
+
+.titulo_meus_anuncios{
+    margin-bottom: 25px;
+}
+
+.form-addAnuncio {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Formulário de Login */
+
+.auth-card {
+    margin-bottom: 30px;
+}
+
+.change-form-p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+#red_cadastro{
+    color: blue;
+    text-decoration: none;
+}
+
+#red_login{
+    color: blue;
+    text-decoration: none;
+}
+
+#Redefinir-senha-entrar{
+    color: blue;
+    text-decoration: none;
+}
+
+
+/* Card dos produtos */
+
+#card{
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    
+        
+}
+
+.card-img-top{
+    height: 200px;
+    width: 95%;
+    margin-left: 5px;
+    margin-top: 3px;
+    padding: 5px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+/* Título do produto no card */
+.card-text {
+    margin-top: 5px;
+    text-align: center;
+    font-weight: normal;    
+
+}
+
+.valor {
+    text-align: center;  
+}
+
+#btn-edit-anuncio{
+    display: inline-block;
+
+}
+
+#btn-finalizar{
+    width: 90px;
+    display: inline-block;
+    margin-left: 5px;
+    
+}
+#editar-finalizar{
+    padding: 0;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+#anuncio-finalizado{
+    margin-left: 17px;
+    padding: 0;
+}
+
+
+#valor-ativo{
+    
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;     
+}
+
+#titulo-ativo{
+    margin-top: 15px;
+    font-size: 16px;
+    
+
+}
+
+
+/* Slide carrossel - anuncioDetalhe */
+
+.carrossel {
+    max-width: 900px;
+    
+}
+
+.carousel-item{
+    max-width: 1000px;
+    object-fit: cover;
+    
+}
+
+.carousel-inner{
+    max-height: 900px;
+    object-fit: contain;
+}
+
+.img-fluid {
+    padding: 0;
+    height: 400px;
+    width: 100%;
+    padding: 0px;
+    object-fit: contain;
+    background-color:rgb(236, 236, 236);
+}
+
+#codigo{
+    font-size: smaller;
+}
+/* Card Dados pessoais Anúncio detalhado */
+
+
+
+
+/* Link anúncio */
+a.link-anuncio{
+    text-decoration: none;
+    color:black;
+    font-weight: normal;        
+}
+
+/*Paginação*/
+
+.pagination {
+    margin-bottom: 20px;    
+}
+
+.step-links {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-links .current {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa-arrow-right{
+    color: black;
+}
+
+.fa-arrow-left{
+    color: black;
+}
+
+
+/* Rodapé */
+.rodape {
+    background-color: forestgreen;
+    margin-top: 45%;
+    height: 24px;
+}
+
+.texto-rodape {
+    color: white;
+    margin-left: 10px;
+    padding: 0;
+    font-size: smaller;
+}

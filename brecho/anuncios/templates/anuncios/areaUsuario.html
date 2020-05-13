@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Encontra Pet{% endblock %}
+
+{% block content %}
+<h3 class="titulo_meus_anuncios">Meus Pets</h3>
+
+<div class='row'>
+    {% for anuncio in anuncios %}
+    {% if anuncio.status == 'Ativo' %}
+    <div class='col' id="col">
+        <div class="card" id="card" style="width: 15rem;">
+            <a class="link-anuncio" href="/anuncioDetalhado/{{anuncio.id}}"><img
+                    src="/media/{{anuncio.foto_principal}}/" class="card-img-top" alt="Produto" />
+
+                <h6 class="card-text" id="titulo-ativo">{{anuncio.titulo}}</h6>
+                <h6 class="card-text" id="nome_animal">Nome: {{anuncio.nome_animal}}</h6>
+                <h6 class="card-text" id="sexo_animal">Sexo: {{anuncio.sexo_animal}}</h6>
+                <h6 class="card-text" id="titulo-ativo">{{anuncio.categoria}}</h6>
+
+            </a>
+            <div id="editar-finalizar">
+                <a href="/editarAnuncio/{{anuncio.id}}"><button type="submit" class="btn btn-primary"
+                        id="btn-edit-anuncio">Editar</button></span></a>
+                        
+                <a href="/encerrarAnuncio/{{anuncio.id}}"><button type="submit" class="btn btn-danger"
+                        id="btn-finalizar">Encerrar</button></a>
+
+            </div>
+
+        </div>
+
+    </div>
+    {% else %}
+
+    <div class='col' id="col">
+        <div class="card" id="card" style="width: 15rem;">
+            <a class="link-anuncio" href="/anuncioDetalhado/{{anuncio.id}}"><img
+                    src="/media/{{anuncio.foto_principal}}/" class="card-img-top" alt="Produto" />
+
+                <h6 class="card-text" id="card-text">{{anuncio.titulo}}</h6>
+
+            </a>
+            <div id="editar-finalizar">
+                <h6 id="anuncio-finalizado">Encerrado.</h6>
+            </div>
+
+        </div>
+
+    </div>
+    {% endif %}
+    {% endfor%}
+</div>
+{% endblock %}
